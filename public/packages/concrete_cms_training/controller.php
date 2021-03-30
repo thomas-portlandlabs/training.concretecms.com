@@ -3,6 +3,7 @@
 namespace Concrete\Package\ConcreteCmsTraining;
 
 use Concrete\Core\Package\Package;
+use PortlandLabs\ConcreteCmsTheme\Navigation\HeaderNavigationFactory;
 
 class Controller extends Package
 {
@@ -40,6 +41,12 @@ class Controller extends Package
     
     public function on_start()
     {
-        
+        $this->app->make('director')->addListener('on_before_render', function($event) {
+            // must be done in an event because it must come AFTER the concrete cms package registers the
+            // header navigation factory class as a singleton.
+            $headerNavigationFactory = app(HeaderNavigationFactory::class);
+            $headerNavigationFactory->setActiveSection(HeaderNavigationFactory::SECTION_SUPPORT);
+        });
+
     }
 }
