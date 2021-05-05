@@ -4642,12 +4642,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/portlandlabs/certification.git",
-                "reference": "8f6700b48125dbf89f82e136cda9133bf061676e"
+                "reference": "2dd268b32805dc53fa7508538fdafe96645c1855"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://bitbucket.org/portlandlabs/certification/get/2dd268b32805dc53fa7508538fdafe96645c1855.zip",
-                "reference": "8f6700b48125dbf89f82e136cda9133bf061676e",
+                "reference": "2dd268b32805dc53fa7508538fdafe96645c1855",
                 "shasum": ""
             },
             "require": {
@@ -4677,9 +4677,9 @@
             "description": "Powerful Certification System based on Express.",
             "homepage": "https://bitbucket.org/portlandlabs/certification",
             "support": {
-                "source": "https://bitbucket.org/portlandlabs/certification/src/8f6700b48125dbf89f82e136cda9133bf061676e/?at=master"
+                "source": "https://bitbucket.org/portlandlabs/certification/src/2dd268b32805dc53fa7508538fdafe96645c1855/?at=master"
             },
-            "time": "2021-04-16T16:28:57+00:00"
+            "time": "2021-04-20T19:10:59+00:00"
         },
         {
             "name": "predis/predis",
