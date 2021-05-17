@@ -498,12 +498,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5/concrete_cms_theme.git",
-                "reference": "be40c64eefe9883d30450705dffa42f3d1884758"
+                "reference": "1c3a4bcd3a761f3081a8360f95b1820adfef96b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/concrete_cms_theme/zipball/be40c64eefe9883d30450705dffa42f3d1884758",
-                "reference": "be40c64eefe9883d30450705dffa42f3d1884758",
+                "url": "https://api.github.com/repos/concrete5/concrete_cms_theme/zipball/1c3a4bcd3a761f3081a8360f95b1820adfef96b7",
+                "reference": "1c3a4bcd3a761f3081a8360f95b1820adfef96b7",
                 "shasum": ""
             },
             "type": "concrete5-package",
@@ -512,7 +512,7 @@
                 "MIT"
             ],
             "description": "Package that contains the official ConcreteCMS Theme.",
-            "time": "2021-05-04T22:37:05+00:00"
+            "time": "2021-05-17T18:09:18+00:00"
         },
         {
             "name": "concrete5/core",
@@ -4646,7 +4646,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/portlandlabs/certification/get/2dd268b32805dc53fa7508538fdafe96645c1855.zip",
+                "url": "https://bitbucket.org/portlandlabs/certification/get/987ec8f71d297f794096e3a1a1b632c26a64f01a.zip",
                 "reference": "2dd268b32805dc53fa7508538fdafe96645c1855",
                 "shasum": ""
             },
