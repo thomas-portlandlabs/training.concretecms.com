@@ -4481,16 +4481,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.26.0",
+            "version": "1.26.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "2209ddd84e7ef1256b7af205d0717fb62cfc9c33"
+                "reference": "c6b00f05152ae2c9b04a448f99c7590beb6042f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/2209ddd84e7ef1256b7af205d0717fb62cfc9c33",
-                "reference": "2209ddd84e7ef1256b7af205d0717fb62cfc9c33",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/c6b00f05152ae2c9b04a448f99c7590beb6042f5",
+                "reference": "c6b00f05152ae2c9b04a448f99c7590beb6042f5",
                 "shasum": ""
             },
             "require": {
@@ -4551,7 +4551,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/monolog/issues",
-                "source": "https://github.com/Seldaek/monolog/tree/1.26.0"
+                "source": "https://github.com/Seldaek/monolog/tree/1.26.1"
             },
             "funding": [
                 {
@@ -4563,7 +4563,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-12-14T12:56:38+00:00"
+            "time": "2021-05-28T08:32:12+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -5022,12 +5022,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/portlandlabs/certification.git",
-                "reference": "3f1bb77bbcbdb49c8ff25c32be5b6bd666809069"
+                "reference": "24282fa1b616281e93b7288438caf2b39f90d538"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/portlandlabs/certification/get/3f1bb77bbcbdb49c8ff25c32be5b6bd666809069.zip",
-                "reference": "3f1bb77bbcbdb49c8ff25c32be5b6bd666809069",
+                "url": "https://bitbucket.org/portlandlabs/certification/get/24282fa1b616281e93b7288438caf2b39f90d538.zip",
+                "reference": "24282fa1b616281e93b7288438caf2b39f90d538",
                 "shasum": ""
             },
             "require": {
@@ -5058,9 +5058,9 @@
             "description": "Powerful Certification System based on Express.",
             "homepage": "https://bitbucket.org/portlandlabs/certification",
             "support": {
-                "source": "https://bitbucket.org/portlandlabs/certification/src/3f1bb77bbcbdb49c8ff25c32be5b6bd666809069/?at=master"
+                "source": "https://bitbucket.org/portlandlabs/certification/src/24282fa1b616281e93b7288438caf2b39f90d538/?at=master"
             },
-            "time": "2021-05-27T19:54:21+00:00"
+            "time": "2021-05-28T13:54:36+00:00"
         },
         {
             "name": "predis/predis",
