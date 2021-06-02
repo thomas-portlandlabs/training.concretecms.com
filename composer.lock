@@ -522,6 +522,41 @@
             "time": "2021-05-24T07:46:03+00:00"
         },
         {
+            "name": "concrete5/community_badges_client",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/concrete5/community_badges_client.git",
+                "reference": "86bebea02af50cfb91c09fdc8e3e987556f56be6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/concrete5/community_badges_client/zipball/86bebea02af50cfb91c09fdc8e3e987556f56be6",
+                "reference": "86bebea02af50cfb91c09fdc8e3e987556f56be6",
+                "shasum": ""
+            },
+            "require": {
+                "kamermans/guzzle-oauth2-subscriber": "^1.0"
+            },
+            "default-branch": true,
+            "type": "concrete5-package",
+            "autoload": {
+                "psr-4": {
+                    "PortlandLabs\\CommunityBadgesClient\\": "src/PortlandLabs/CommunityBadgesClient"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Assign badges remotely to the community site.",
+            "support": {
+                "issues": "https://github.com/concrete5/community_badges_client/issues",
+                "source": "https://github.com/concrete5/community_badges_client/tree/master"
+            },
+            "time": "2021-06-02T03:32:36+00:00"
+        },
+        {
             "name": "concrete5/concrete_cms_theme",
             "version": "dev-master",
             "source": {
@@ -4987,16 +5022,16 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/portlandlabs/certification.git",
-                "reference": "e129f99271f5b2939832e3ac9dcd994001fb1fc0"
+                "reference": "eeabd9f6f3a9a7bf8ca17e290c53b96aa8a0173a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/portlandlabs/certification/get/e129f99271f5b2939832e3ac9dcd994001fb1fc0.zip",
-                "reference": "e129f99271f5b2939832e3ac9dcd994001fb1fc0",
+                "url": "https://bitbucket.org/portlandlabs/certification/get/eeabd9f6f3a9a7bf8ca17e290c53b96aa8a0173a.zip",
+                "reference": "eeabd9f6f3a9a7bf8ca17e290c53b96aa8a0173a",
                 "shasum": ""
             },
             "require": {
-                "kamermans/guzzle-oauth2-subscriber": "^1.0",
+                "concrete5/community_badges_client": "*",
                 "setasign/fpdf": "^1.8",
                 "setasign/fpdi": "^2.3"
             },
@@ -5023,9 +5058,9 @@
             "description": "Powerful Certification System based on Express.",
             "homepage": "https://bitbucket.org/portlandlabs/certification",
             "support": {
-                "source": "https://bitbucket.org/portlandlabs/certification/src/e129f99271f5b2939832e3ac9dcd994001fb1fc0/?at=master"
+                "source": "https://bitbucket.org/portlandlabs/certification/src/eeabd9f6f3a9a7bf8ca17e290c53b96aa8a0173a/?at=master"
             },
-            "time": "2021-06-01T13:12:26+00:00"
+            "time": "2021-06-02T09:44:23+00:00"
         },
         {
             "name": "predis/predis",
