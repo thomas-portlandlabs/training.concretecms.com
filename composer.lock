@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8ef28fd86fd300def0e0f97d791c48aa",
+    "content-hash": "09572d46a06482497b5f738ddcbd73c6",
     "packages": [
         {
             "name": "anahkiasen/html-object",
@@ -4994,12 +4994,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/portlandlabs/certification.git",
-                "reference": "6de89350c94c2b06808023ea123ce2c90f040509"
+                "reference": "56dd89c7c520cb64370426372564472b1c5e3152"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/portlandlabs/certification/get/6de89350c94c2b06808023ea123ce2c90f040509.zip",
-                "reference": "6de89350c94c2b06808023ea123ce2c90f040509",
+                "url": "https://bitbucket.org/portlandlabs/certification/get/56dd89c7c520cb64370426372564472b1c5e3152.zip",
+                "reference": "56dd89c7c520cb64370426372564472b1c5e3152",
                 "shasum": ""
             },
             "require": {
@@ -5030,9 +5030,9 @@
             "description": "Powerful Certification System based on Express.",
             "homepage": "https://bitbucket.org/portlandlabs/certification",
             "support": {
-                "source": "https://bitbucket.org/portlandlabs/certification/src/5d8fddefddc7d9405077470d4a676069a2597ce2/?at=master"
+                "source": "https://bitbucket.org/portlandlabs/certification/src/56dd89c7c520cb64370426372564472b1c5e3152/?at=master"
             },
-            "time": "2021-07-14T22:26:01+00:00"
+            "time": "2021-12-14T17:30:15+00:00"
         },
         {
             "name": "portlandlabs/newrelic",
@@ -11391,5 +11391,8 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "platform-overrides": {
+        "php": "7.4"
+    },
+    "plugin-api-version": "2.1.0"
 }

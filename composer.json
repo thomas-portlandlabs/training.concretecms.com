@@ -28,7 +28,10 @@
     "mockery/mockery": "^1.2"
   },
   "config": {
-    "preferred-install": "dist"
+    "preferred-install": "dist",
+    "platform": {
+      "php": "7.4"
+    }
   },
   "extra": {
     "allow-subpatches": [
