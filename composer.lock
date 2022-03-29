@@ -6332,12 +6332,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/portlandlabs/certification.git",
-                "reference": "a53f4d99f2447d6291d42664aca000ed7e73acc2"
+                "reference": "213965b9a0c3da5a4da91badf83d61036a2a15d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/portlandlabs/certification/get/a53f4d99f2447d6291d42664aca000ed7e73acc2.zip",
-                "reference": "a53f4d99f2447d6291d42664aca000ed7e73acc2",
+                "url": "https://bitbucket.org/portlandlabs/certification/get/213965b9a0c3da5a4da91badf83d61036a2a15d6.zip",
+                "reference": "213965b9a0c3da5a4da91badf83d61036a2a15d6",
                 "shasum": ""
             },
             "require": {
@@ -6368,9 +6368,9 @@
             "description": "Powerful Certification System based on Express.",
             "homepage": "https://bitbucket.org/portlandlabs/certification",
             "support": {
-                "source": "https://bitbucket.org/portlandlabs/certification/src/a53f4d99f2447d6291d42664aca000ed7e73acc2/?at=master"
+                "source": "https://bitbucket.org/portlandlabs/certification/src/213965b9a0c3da5a4da91badf83d61036a2a15d6/?at=master"
             },
-            "time": "2021-12-14T17:55:35+00:00"
+            "time": "2022-03-29T15:13:00+00:00"
         },
         {
             "name": "portlandlabs/newrelic",
