@@ -380,12 +380,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5/concrete_cms_theme.git",
-                "reference": "f0e9e020eca35ca92e0466cf67e992a44ad83827"
+                "reference": "963a27f3247889f4f71c2a3f8a873964482339cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/concrete_cms_theme/zipball/f0e9e020eca35ca92e0466cf67e992a44ad83827",
-                "reference": "f0e9e020eca35ca92e0466cf67e992a44ad83827",
+                "url": "https://api.github.com/repos/concrete5/concrete_cms_theme/zipball/963a27f3247889f4f71c2a3f8a873964482339cb",
+                "reference": "963a27f3247889f4f71c2a3f8a873964482339cb",
                 "shasum": ""
             },
             "default-branch": true,
@@ -399,7 +399,7 @@
                 "issues": "https://github.com/concrete5/concrete_cms_theme/issues",
                 "source": "https://github.com/concrete5/concrete_cms_theme/tree/master"
             },
-            "time": "2022-03-16T18:49:35+00:00"
+            "time": "2022-04-04T20:07:49+00:00"
         },
         {
             "name": "concrete5/core",
@@ -6332,12 +6332,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/portlandlabs/certification.git",
-                "reference": "c1cf8f1fd07118fac921bd844624f33252237b44"
+                "reference": "4b76894c6020f70042c66a7c4f78d4d5a4d98cb8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/portlandlabs/certification/get/c1cf8f1fd07118fac921bd844624f33252237b44.zip",
-                "reference": "c1cf8f1fd07118fac921bd844624f33252237b44",
+                "url": "https://bitbucket.org/portlandlabs/certification/get/4b76894c6020f70042c66a7c4f78d4d5a4d98cb8.zip",
+                "reference": "4b76894c6020f70042c66a7c4f78d4d5a4d98cb8",
                 "shasum": ""
             },
             "require": {
@@ -6368,9 +6368,9 @@
             "description": "Powerful Certification System based on Express.",
             "homepage": "https://bitbucket.org/portlandlabs/certification",
             "support": {
-                "source": "https://bitbucket.org/portlandlabs/certification/src/c1cf8f1fd07118fac921bd844624f33252237b44/?at=master"
+                "source": "https://bitbucket.org/portlandlabs/certification/src/4b76894c6020f70042c66a7c4f78d4d5a4d98cb8/?at=master"
             },
-            "time": "2022-03-29T21:13:10+00:00"
+            "time": "2022-04-04T18:19:34+00:00"
         },
         {
             "name": "portlandlabs/newrelic",
@@ -13193,5 +13193,5 @@
     "platform-overrides": {
         "php": "7.4"
     },
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.3.0"
 }
