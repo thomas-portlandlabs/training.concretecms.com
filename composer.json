@@ -34,8 +34,9 @@
       "php": "7.4"
     },
     "allow-plugins": {
-      "composer/installers": true,
-      "mlocati/composer-patcher": true
+      "kylekatarnls/update-helper": true,
+      "mlocati/composer-patcher": true,
+      "composer/installers": true
     }
   },
   "extra": {
