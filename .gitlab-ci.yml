@@ -64,6 +64,12 @@ build:tar:
   rules:
     - if: $CI_COMMIT_BRANCH =~ /(develop|master)/
   before_script:
+    # Adding support for ssh keys in order to download packages from bitbucket.
+    - 'command -v ssh-agent >/dev/null || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
     # Install production dependencies
     - composer install --no-dev --no-interaction --optimize-autoloader
   script:
