@@ -70,6 +70,8 @@ build:tar:
     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
+    - ssh-keyscan bitbucket.org >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
     - git config --global user.email "systems@portlandlabs.com"
     - git config --global user.name "Gitlab CI"
     # Install production dependencies
