@@ -68,7 +68,7 @@ test:phpcs:
     - >
       vendor/bin/phpcs --basepath=.
       --report=code --report-junit=junit.xml --report-\\Micheh\\PhpCodeSniffer\\Report\\Gitlab=phpcs-quality-report.json 
-      phpcs.xml.dist src tests public/application
+      phpcs.xml.dist tests public/application
 
 build:tar:
   stage: build
