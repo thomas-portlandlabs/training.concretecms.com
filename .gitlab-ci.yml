@@ -15,9 +15,20 @@ include:
   - template: Dependency-Scanning.gitlab-ci.yml
 #  - template: License-Scanning.gitlab-ci.yml
 
+.ssh_key_setup: &ssh_key_setup
+    # Adding support for ssh keys in order to download packages from bitbucket.
+    - 'command -v ssh-agent >/dev/null || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - ssh-keyscan bitbucket.org >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+    - git config --global user.email "systems@portlandlabs.com"
+    - git config --global user.name "Gitlab CI"
+
 # Test with PHPUnit
 test:phpunit:
-  allow_failure: true
   stage: test
   rules:
     - if: $CI_PIPELINE_SOURCE == 'external_pull_request_event' || $CI_PIPELINE_SOURCE == 'push'
@@ -31,13 +42,13 @@ test:phpunit:
         coverage_format: cobertura
         path: coverage.cobertura.xml
   before_script:
+    - *ssh_key_setup
     - composer install --dev --no-interaction --optimize-autoloader
   script:
     - XDEBUG_MODE=coverage vendor/bin/phpunit --configuration phpunit.xml.dist --log-junit=junit.xml --coverage-text --colors=never --coverage-cobertura=coverage.cobertura.xml
 
 # Test with PHPCS
 test:phpcs:
-  allow_failure: true
   stage: test
   rules:
     - if: $CI_PIPELINE_SOURCE == 'external_pull_request_event' || $CI_PIPELINE_SOURCE == 'push'
@@ -49,12 +60,13 @@ test:phpcs:
       junit: junit.xml
       codequality: phpcs-quality-report.json
   before_script:
+    - *ssh_key_setup
     - composer install --no-interaction --optimize-autoloader
   script:
     - >
       vendor/bin/phpcs --basepath=.
       --report=code --report-junit=junit.xml --report-\\Micheh\\PhpCodeSniffer\\Report\\Gitlab=phpcs-quality-report.json 
-      phpcs.xml.dist src tests public/application
+      phpcs.xml.dist tests public/application
 
 build:tar:
   stage: build
@@ -64,16 +76,7 @@ build:tar:
   rules:
     - if: $CI_COMMIT_BRANCH =~ /(develop|master)/
   before_script:
-    # Adding support for ssh keys in order to download packages from bitbucket.
-    - 'command -v ssh-agent >/dev/null || ( apt-get update -y && apt-get install openssh-client -y )'
-    - eval $(ssh-agent -s)
-    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
-    - mkdir -p ~/.ssh
-    - chmod 700 ~/.ssh
-    - ssh-keyscan bitbucket.org >> ~/.ssh/known_hosts
-    - chmod 644 ~/.ssh/known_hosts
-    - git config --global user.email "systems@portlandlabs.com"
-    - git config --global user.name "Gitlab CI"
+    - *ssh_key_setup
     # Install production dependencies
     - composer install --no-dev --no-interaction --optimize-autoloader
   script:
